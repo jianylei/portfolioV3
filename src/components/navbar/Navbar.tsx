@@ -9,7 +9,7 @@ interface NavbarProps {}
 
 const Navbar: FC<NavbarProps> = ({}) => {
   return (
-    <header className="sticky top-0 z-[10] p-5">
+    <header className="fixed top-0 inset-x-0 z-[10] p-5">
       <div className="container max-w-7xl h-full mx-auto flex items-center justify-between overflow-hidden">
         <motion.div
           initial={{
