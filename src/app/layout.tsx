@@ -21,7 +21,7 @@ export default function RootLayout({
     <html
       lang="en"
       className={cn(
-        'bg-white text-slate-900 antialiased light',
+        'text-slate-800 antialiased snap-y snap-mandatory overflow-scroll z-0',
         inter.className
       )}>
       <body className="min-h-screen antialiased">

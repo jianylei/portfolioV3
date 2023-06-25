@@ -1,6 +1,6 @@
 import HeroSection from '@/components/HeroSection'
 import { Icons } from '@/components/Icons'
-import ThemeToggle from '@/components/ThemeToggle'
+import ThemeToggle from '@/components/navbar/ThemeToggle'
 import Navbar from '@/components/navbar/Navbar'
 
 export default function Home() {

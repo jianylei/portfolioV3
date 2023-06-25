@@ -1,36 +1,38 @@
+import { ChevronDown, User } from 'lucide-react'
 import { FC } from 'react'
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
-  DropdownMenuSeparator,
   DropdownMenuTrigger
-} from '../ui/dropdown-menu'
-import { ChevronDown, LogIn, MoonStar, User } from 'lucide-react'
-import ThemeToggle from '../ThemeToggle'
+} from '../ui/Dropdown-Menu'
+import LogIn from './LogIn'
+import ThemeToggle from './ThemeToggle'
 
 interface MoreOptionsNavProps {}
 
 const MoreOptionsNav: FC<MoreOptionsNavProps> = ({}) => {
+  const toBeRendered = [ThemeToggle, LogIn]
+
   return (
     <DropdownMenu>
-      <DropdownMenuTrigger className="flex p-1 items-center text-slate-700">
+      <DropdownMenuTrigger className="flex p-1 items-center dark:text-gray text-gray">
         <User />
         <ChevronDown className="w-4 h-4" />
       </DropdownMenuTrigger>
-      <DropdownMenuContent>
-        <DropdownMenuItem className="text-slate-700 font-medium p-0">
-          <ThemeToggle />
-        </DropdownMenuItem>
-
-        <DropdownMenuSeparator />
-
-        <DropdownMenuItem className="text-slate-700 font-medium p-0">
-          <div className="flex p-2 pb-1">
-            <LogIn className="w-5 h-5 mr-2" />
-            Log In
-          </div>
-        </DropdownMenuItem>
+      <DropdownMenuContent
+        className="bg-white dark:bg-[rgb(50,50,50)] [&>*:last-child]:border-0 dark:border-[rgb(45,45,45)]"
+        align="end">
+        {toBeRendered.map((Component, index) => {
+          return (
+            <DropdownMenuItem
+              key={index}
+              className="text-slate-800 font-medium p-0 dark:text-slate-50 border-b
+             border-slate-200 dark:border-[rgb(45,45,45)] dark:focus:bg-[rgb(60,60,60)]">
+              <Component />
+            </DropdownMenuItem>
+          )
+        })}
       </DropdownMenuContent>
     </DropdownMenu>
   )

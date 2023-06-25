@@ -28,22 +28,22 @@ const Navbar: FC<NavbarProps> = ({}) => {
           className="flex flex-row items-center">
           <SocialIcon
             url="https://www.linkedin.com/in/jianylei-dev/"
-            fgColor="rgb(51 65 85)"
+            fgColor="gray"
             bgColor="transparent"
           />
           <SocialIcon
             url="https://github.com/jianylei"
-            fgColor="rgb(51 65 85)"
+            fgColor="gray"
             bgColor="transparent"
           />
           <div className="flex flex-row items-center cursor-pointer">
             <SocialIcon
               className="cursor-pointer"
               network="email"
-              fgColor="rgb(51 65 85)"
+              fgColor="gray"
               bgColor="transparent"
             />
-            <p className="uppercase hidden md:inline-flex text-slate-700">
+            <p className="uppercase hidden md:inline-flex text-gray">
               Get In Touch
             </p>
           </div>
