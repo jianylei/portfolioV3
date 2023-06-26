@@ -8,8 +8,9 @@ const ExperienceCard: FC<ExperienceCardProps> = ({}) => {
   return (
     <article
       className="flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[500px]
-      md:w-[600px] xl:w-[900px] snap-center bg-[#292929] p-10 opacity-40 hover:opacity-100 cursor-pointer
+      md:w-[600px] xl:w-[900px] snap-center bg-slate-200 dark:bg-[#292929] p-10
       transition-opacity duration-200 overflow-hidden">
+      {/* opacity-40 hover:opacity-100 */}
       <motion.div
         initial={{
           y: -100,
@@ -60,7 +61,9 @@ const ExperienceCard: FC<ExperienceCardProps> = ({}) => {
             height="100"
           />
         </div>
-        <p className="uppercase py-5 text-gray-300">Jan. 2022 - April 2022</p>
+        <p className="uppercase py-5 text-slate-600 dark:text-gray-300">
+          Jan. 2022 - April 2022
+        </p>
 
         <ul className="list-disc space-y-4 ml-5 text-lg">
           <li>

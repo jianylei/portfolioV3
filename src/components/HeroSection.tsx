@@ -6,9 +6,9 @@ import Link from 'next/link'
 interface HeroSectionProps {}
 
 const HeroSection: FC<HeroSectionProps> = ({}) => {
-  const nav = ['about', 'experience', 'skills', 'projects']
+  const nav = ['experience', 'projects', 'skills', 'about']
   return (
-    <section id="hero" className="snap-start">
+    <section id="hero">
       <div
         className="h-screen flex flex-col space-y-8 items-center justify-center
         text-center overflow-hidden">

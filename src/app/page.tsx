@@ -4,6 +4,7 @@ import ThemeToggle from '@/components/navbar/ThemeToggle'
 import Navbar from '@/components/navbar/Navbar'
 import AboutSection from '@/components/AboutSection'
 import ExperienceSection from '@/components/ExperienceSection'
+import ProjectSection from '@/components/ProjectSection'
 
 export default function Home() {
   return (
@@ -11,13 +12,15 @@ export default function Home() {
       {/* Hero */}
       <HeroSection />
 
+      {/* Projects */}
+      <ProjectSection />
+
       {/* Experience */}
       <ExperienceSection />
 
       {/* About */}
       <AboutSection />
 
-      {/* Projects */}
       {/* Skills */}
       {/* Contact */}
     </main>
