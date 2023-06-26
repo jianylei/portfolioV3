@@ -21,7 +21,7 @@ export default function RootLayout({
     <html
       lang="en"
       className={cn(
-        'text-slate-800 antialiased snap-y snap-mandatory overflow-scroll z-0',
+        'text-slate-800 antialiase scroll-smooth snap-y snap-mandatory overflow-scroll z-0',
         inter.className
       )}>
       <body className="min-h-screen pt-24 antialiased">
