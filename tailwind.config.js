@@ -10,14 +10,15 @@ module.exports = {
   theme: {
     container: {
       center: true,
-      padding: "2rem",
       screens: {
         "2xl": "1400px",
       },
     },
     extend: {
       colors: {
-        gray: '#808080'
+        gray: {
+          default: '#808080'
+        }
       },
       keyframes: {
         "accordion-down": {

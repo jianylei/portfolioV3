@@ -43,7 +43,7 @@ const Navbar: FC<NavbarProps> = ({}) => {
               fgColor="gray"
               bgColor="transparent"
             />
-            <p className="uppercase hidden md:inline-flex text-gray">
+            <p className="uppercase hidden md:inline-flex text-gray-default">
               Get In Touch
             </p>
           </div>

@@ -27,6 +27,7 @@ export default function RootLayout({
       <body className="min-h-screen pt-24 antialiased">
         <Providers>
           <Navbar />
+
           <div className="container max-w-7xl mx-auto h-full pt-12">
             {children}
           </div>

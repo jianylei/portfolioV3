@@ -16,7 +16,7 @@ const MoreOptionsNav: FC<MoreOptionsNavProps> = ({}) => {
 
   return (
     <DropdownMenu>
-      <DropdownMenuTrigger className="flex p-1 items-center dark:text-gray text-gray">
+      <DropdownMenuTrigger className="flex p-1 items-center dark:text-gray-default text-gray-default">
         <User />
         <ChevronDown className="w-4 h-4" />
       </DropdownMenuTrigger>
