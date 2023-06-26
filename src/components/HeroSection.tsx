@@ -21,7 +21,7 @@ const HeroSection: FC<HeroSectionProps> = ({}) => {
           width="300"
         />
         <div className="z-20">
-          <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[15px]">
+          <h2 className="text-sm uppercase text-slate-600 dark:text-gray-500 pb-2 tracking-[15px]">
             Software Developer
           </h2>
 
@@ -34,9 +34,8 @@ const HeroSection: FC<HeroSectionProps> = ({}) => {
               return (
                 <Link href={`#${item}`} key={index}>
                   <button
-                    className="px-6 py-2
-                  uppercase text-sm tracking-widest text-gray-500 transition-all
-                   hover:text-[#F7AB0A]/40">
+                    className="px-6 py-2 uppercase text-sm tracking-widest
+                    text-slate-600 dark:text-gray-500 transition-all hover:text-[#D4AF37] dark:hover:text-[#F7AB0A]/40">
                     {item}
                   </button>
                 </Link>
