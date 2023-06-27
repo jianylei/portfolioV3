@@ -21,14 +21,14 @@ export default function RootLayout({
     <html
       lang="en"
       className={cn(
-        'text-slate-800 antialiase scroll-smooth overflow-scroll z-0',
+        'antialiase z-0 overflow-scroll overflow-x-hidden scroll-smooth text-slate-800',
         inter.className
       )}>
-      <body className="min-h-screen pt-24 antialiased">
+      <body className="min-h-screen pt-12 antialiased">
         <Providers>
           <Navbar />
 
-          <div className="container max-w-7xl mx-auto h-full pt-12">
+          <div className="container mx-auto h-full max-w-7xl pt-12">
             {children}
           </div>
         </Providers>

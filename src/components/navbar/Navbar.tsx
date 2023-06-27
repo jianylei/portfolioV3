@@ -9,8 +9,8 @@ interface NavbarProps {}
 
 const Navbar: FC<NavbarProps> = ({}) => {
   return (
-    <header className="fixed top-0 inset-x-0 z-[10] p-5">
-      <div className="container max-w-7xl h-full mx-auto flex items-center justify-between overflow-hidden">
+    <header className="fixed inset-x-0 top-0 z-20 bg-slate-100 p-5 pb-2 dark:bg-[rgb(36,36,36)]">
+      <div className="container mx-auto flex h-full max-w-7xl items-center justify-between overflow-hidden">
         <motion.div
           initial={{
             x: -500,
@@ -36,14 +36,14 @@ const Navbar: FC<NavbarProps> = ({}) => {
             fgColor="gray"
             bgColor="transparent"
           />
-          <div className="flex flex-row items-center cursor-pointer">
+          <div className="flex cursor-pointer flex-row items-center">
             <SocialIcon
               className="cursor-pointer"
               network="email"
               fgColor="gray"
               bgColor="transparent"
             />
-            <p className="uppercase hidden md:inline-flex text-gray-default">
+            <p className="hidden uppercase text-gray-default md:inline-flex">
               Get In Touch
             </p>
           </div>

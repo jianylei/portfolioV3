@@ -8,7 +8,7 @@ const ExperienceCard: FC<ExperienceCardProps> = ({}) => {
   return (
     <article
       className="flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[500px]
-      md:w-[600px] xl:w-[900px] snap-center bg-slate-200 dark:bg-[#292929] p-10
+      md:w-[700px] lg:w-[850px] xl:w-[900px] snap-center bg-slate-200 dark:bg-[#292929] p-10
       transition-opacity duration-200 overflow-hidden">
       {/* opacity-40 hover:opacity-100 */}
       <motion.div
