@@ -3,7 +3,7 @@
 import { FC } from 'react'
 import ProjectImageCard from './ProjectImageCard'
 import { motion } from 'framer-motion'
-import Carousel from './carousel/Carousel'
+import Carousel from './Carousel'
 import Image from 'next/image'
 
 interface ProjectSectionProps {}
@@ -28,7 +28,7 @@ const ProjectSection: FC<ProjectSectionProps> = ({}) => {
           Projects
         </h3>
 
-        <div className="mx-auto w-full">
+        <div className="mx-auto w-full p-10">
           <Carousel loop>
             {images.map((src, i) => {
               return (

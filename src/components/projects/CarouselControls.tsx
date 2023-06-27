@@ -6,9 +6,9 @@ type Props = {
 }
 const CarouselControls = (props: Props) => {
   return (
-    <div className="left-0 top-14 flex h-[calc(100%-9rem)] w-full justify-center md:absolute">
+    <div className="left-0 top-14 flex h-[calc(100%-11.5rem)] w-full justify-center md:absolute">
       <div
-        className="group flex w-[35%] items-center md:w-[40%] lg:w-[35%]"
+        className="group flex w-[35%] cursor-pointer items-center md:w-[40%] lg:w-[35%]"
         onClick={() => {
           if (props.canScrollPrev) {
             props.onPrev()
@@ -16,7 +16,7 @@ const CarouselControls = (props: Props) => {
         }}>
         <svg
           viewBox="137.718 -1.001 366.563 644"
-          className="mb-32 h-20 w-20 bg-transparent text-slate-700/50 transition duration-150 
+          className="mb-36 h-16 w-16 bg-transparent text-slate-700/50 transition duration-150 
         group-hover:text-slate-700 dark:text-gray-default/50 dark:group-hover:text-gray-default">
           <path
             fill="currentColor"
@@ -26,7 +26,7 @@ const CarouselControls = (props: Props) => {
       </div>
 
       <div
-        className="group flex w-[35%] items-center justify-end md:w-[40%] lg:w-[35%]"
+        className="group flex w-[35%] cursor-pointer items-center justify-end md:w-[40%] lg:w-[35%]"
         onClick={() => {
           if (props.canScrollNext) {
             props.onNext()
@@ -34,7 +34,7 @@ const CarouselControls = (props: Props) => {
         }}>
         <svg
           viewBox="0 0 238.003 238.003"
-          className="mb-32 h-20 w-20 bg-transparent text-slate-700/50 transition duration-150 
+          className="mb-36 h-16 w-16 bg-transparent text-slate-700/50 transition duration-150 
           group-hover:text-slate-700 dark:text-gray-default/50 dark:group-hover:text-gray-default">
           <path
             fill="currentColor"
