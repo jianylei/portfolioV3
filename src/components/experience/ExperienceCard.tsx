@@ -15,7 +15,7 @@ const ExperienceCard: FC<ExperienceCardProps> = ({}) => {
     <Accordion
       type="single"
       collapsible
-      className="h-full w-full border-0 bg-slate-200 px-5 opacity-40 transition-opacity
+      className="h-full w-full border-0 bg-slate-200 px-5 opacity-60 transition-opacity
       duration-200 hover:opacity-100 dark:bg-[#292929]">
       <AccordionItem value="item-1" className="border-0">
         <AccordionTrigger>

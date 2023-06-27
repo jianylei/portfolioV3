@@ -37,7 +37,7 @@ const ExperienceContent: FC<ExperienceContentProps> = ({}) => {
         />
       </div>
 
-      <ul className="ml-5 list-disc space-y-4 px-10 pb-12 text-lg">
+      <ul className="ml-5 list-disc space-y-4 px-10 pb-12 text-base">
         <li>
           Integrated automated testing in CI/CD pipelines, resulting in improved
           code quality and faster deployment times

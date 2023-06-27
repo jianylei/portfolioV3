@@ -5,6 +5,7 @@ import ProjectImageCard from './ProjectImageCard'
 import { motion } from 'framer-motion'
 import Carousel from './Carousel'
 import Image from 'next/image'
+import ProjectDetail from './ProjectDetail'
 
 interface ProjectSectionProps {}
 
@@ -51,9 +52,7 @@ const ProjectSection: FC<ProjectSectionProps> = ({}) => {
                     </p>
 
                     <div className="flex justify-center">
-                      <button className="text-sm text-[#D4AF37] dark:text-[#F7AB0A] dark:hover:text-[#F7AB0A]/80">
-                        Learn More
-                      </button>
+                      <ProjectDetail />
                     </div>
                   </div>
                 </div>
