@@ -20,7 +20,7 @@ const ExperienceSection: FC<ExperienceSectionProps> = ({}) => {
           Experience
         </h3>
 
-        <div className="flex w-full justify-center p-10">
+        <div className="flex w-full justify-center py-10 md:px-10 lg:px-14">
           <ExperienceCard />
         </div>
       </motion.div>

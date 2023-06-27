@@ -1,21 +1,12 @@
-import { motion } from 'framer-motion'
 import Image from 'next/image'
 import { FC } from 'react'
 
-interface SkillProps {
-  directionLeft?: boolean
-}
+interface SkillProps {}
 
-const Skill: FC<SkillProps> = ({ directionLeft }) => {
+const Skill: FC<SkillProps> = ({}) => {
   return (
     <div className="group relative flex cursor-pointer">
-      <motion.div
-        initial={{
-          x: directionLeft ? -200 : 200,
-          opacity: 0
-        }}
-        transition={{ duration: 1 }}
-        whileInView={{ opacity: 1, x: 0 }}>
+      <div>
         <Image
           src="/cibc_logo.png"
           alt="cibc"
@@ -24,7 +15,7 @@ const Skill: FC<SkillProps> = ({ directionLeft }) => {
           className="h-20 w-20 rounded-full border border-slate-200 object-contain shadow filter transition duration-300
           ease-in-out group-hover:grayscale dark:border-gray-default md:h-24 md:w-24 lg:h-28 lg:w-28 xl:h-32 xl:w-32"
         />
-      </motion.div>
+      </div>
 
       <div
         className="absolute z-0 h-20 w-20 rounded-full opacity-0 transition duration-300 ease-in-out group-hover:bg-slate-700

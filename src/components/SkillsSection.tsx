@@ -19,7 +19,7 @@ const SkillsSection: FC<SkillsSectionProps> = ({}) => {
           Skills
         </h3>
 
-        <div className="mt-28 grid grid-cols-4 gap-5">
+        <div className="mb-14 mt-28 grid grid-cols-4 gap-5">
           <Skill />
           <Skill />
           <Skill />
