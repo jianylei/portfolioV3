@@ -27,7 +27,7 @@ const AboutContent: FC<AboutContentProps> = ({}) => {
       <RoughNotationGroup show={show}>
         <div className="mt-10 flex flex-col space-y-3 py-10 md:px-10 lg:px-32">
           <h2 className="text-2xl font-semibold">
-            Hello! I'm Jian, a{' '}
+            Hello! I&apos;m Jian, a{' '}
             <RoughNotation type="highlight" color="#f7ac0a89" iterations={1}>
               developer
             </RoughNotation>{' '}
@@ -37,12 +37,12 @@ const AboutContent: FC<AboutContentProps> = ({}) => {
             I love building tools that are user-friendly, simple and intuitive.
           </p>
           <p>
-            I am a graduate of Seneca College's Computer Programming program,
-            where I spent 2 years learning the fundamentals of front-end and
-            back-end web developement , along with object-oriented programming.
-            I also worked at CIBC as an Application Developer Co-op, where I got
-            extensive knowledge and experience working with Java, as well as the
-            Azure DevOps cloud platform.
+            I am a graduate of Seneca College&apos;s Computer Programming
+            program, where I spent 2 years learning the fundamentals of
+            front-end and back-end web developement , along with object-oriented
+            programming. I also worked at CIBC as an Application Developer
+            Co-op, where I got extensive knowledge and experience working with
+            Java, as well as the Azure DevOps cloud platform.
           </p>
           <p>
             Through these experiences, I had the opportunity to work with both
@@ -51,7 +51,7 @@ const AboutContent: FC<AboutContentProps> = ({}) => {
             towards flexibility, and collaboration.
           </p>
           <p>
-            I'm currently looking for a new role as a developer.{' '}
+            I&apos;m currently looking for a new role as a developer.{' '}
             <RoughNotation type="circle" color="#f7ac0a89" iterations={2}>
               <Link href="#contact">Hire me?</Link>
             </RoughNotation>
