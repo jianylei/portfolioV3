@@ -2,7 +2,6 @@ import Providers from '@/components/Providers'
 import Navbar from '@/components/navbar/Navbar'
 import { cn } from '@/lib/utils'
 import '@/styles/globals.css'
-import { ThemeProvider } from 'next-themes'
 import { Inter } from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -21,7 +20,7 @@ export default function RootLayout({
     <html
       lang="en"
       className={cn(
-        'antialiase z-0 overflow-scroll overflow-x-hidden scroll-smooth text-slate-800',
+        'antialiase z-0 overflow-x-hidden overflow-y-scroll scroll-smooth text-slate-800',
         inter.className
       )}>
       <body className="min-h-screen pt-12 antialiased">

@@ -4,6 +4,8 @@ import { FC } from 'react'
 import { SocialIcon } from 'react-social-icons'
 import MoreOptionsNav from './MoreOptionsNav'
 import { motion } from 'framer-motion'
+import Link from 'next/link'
+import { Mail } from 'lucide-react'
 
 interface NavbarProps {}
 
@@ -36,17 +38,14 @@ const Navbar: FC<NavbarProps> = ({}) => {
             fgColor="gray"
             bgColor="transparent"
           />
-          <a href="#contact">
-            <SocialIcon
-              className="cursor-pointer"
-              network="email"
-              fgColor="gray"
-              bgColor="transparent"
-            />
+          <Link
+            href="#contact"
+            className="m-3 flex cursor-pointer flex-row items-center gap-2">
+            <Mail className="text-gray-default" />
             <p className="hidden uppercase text-gray-default md:inline-flex">
               Get In Touch
             </p>
-          </a>
+          </Link>
         </motion.div>
 
         <motion.div
