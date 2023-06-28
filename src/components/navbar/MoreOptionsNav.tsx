@@ -5,7 +5,7 @@ import {
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger
-} from '../ui/Dropdown-Menu'
+} from '../ui/DropdownMenu'
 import LogIn from './LogIn'
 import ThemeToggle from './ThemeToggle'
 
