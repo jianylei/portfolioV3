@@ -36,7 +36,7 @@ const Navbar: FC<NavbarProps> = ({}) => {
             fgColor="gray"
             bgColor="transparent"
           />
-          <div className="flex cursor-pointer flex-row items-center">
+          <a href="#contact">
             <SocialIcon
               className="cursor-pointer"
               network="email"
@@ -46,7 +46,7 @@ const Navbar: FC<NavbarProps> = ({}) => {
             <p className="hidden uppercase text-gray-default md:inline-flex">
               Get In Touch
             </p>
-          </div>
+          </a>
         </motion.div>
 
         <motion.div

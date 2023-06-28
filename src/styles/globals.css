@@ -8,3 +8,12 @@
   }
 }
 
+@layer components{
+  .contactInput {
+    @apply outline-none bg-slate-400/10 rounded-sm border-b px-6 py-4 border-slate-200 dark:border-[#242424]
+    text-gray-500 placeholder-gray-500 transition-all dark:focus:border-[#F7AB0A]/40
+    dark:focus:text-[#F7AB0A]/40 dark:hover:border-[#F7AB0A]/40 focus:border-[#D4AF37]
+    focus:text-slate-700 hover:border-[#D4AF37]
+  }
+}
+

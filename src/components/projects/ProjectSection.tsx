@@ -29,7 +29,7 @@ const ProjectSection: FC<ProjectSectionProps> = ({}) => {
           Projects
         </h3>
 
-        <div className="mx-auto w-full p-10">
+        <div className="mx-auto w-full p-10 pb-0">
           <Carousel loop>
             {images.map((src, i) => {
               return (

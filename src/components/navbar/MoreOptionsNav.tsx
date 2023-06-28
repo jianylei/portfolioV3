@@ -16,19 +16,19 @@ const MoreOptionsNav: FC<MoreOptionsNavProps> = ({}) => {
 
   return (
     <DropdownMenu>
-      <DropdownMenuTrigger className="flex p-1 items-center dark:text-gray-default text-gray-default">
+      <DropdownMenuTrigger className="flex items-center p-1 text-gray-default dark:text-gray-default">
         <User />
-        <ChevronDown className="w-4 h-4" />
+        <ChevronDown className="h-4 w-4" />
       </DropdownMenuTrigger>
       <DropdownMenuContent
-        className="bg-white dark:bg-[rgb(50,50,50)] [&>*:last-child]:border-0 dark:border-[rgb(45,45,45)]"
+        className="bg-white dark:border-[rgb(45,45,45)] dark:bg-[rgb(50,50,50)] [&>*:last-child]:border-0"
         align="end">
         {toBeRendered.map((Component, index) => {
           return (
             <DropdownMenuItem
               key={index}
-              className="text-slate-800 font-medium p-0 dark:text-slate-50 border-b
-             border-slate-200 dark:border-[rgb(45,45,45)] dark:focus:bg-[rgb(60,60,60)]">
+              className="border-b border-slate-200 p-0 font-medium text-slate-800
+             dark:border-[rgb(45,45,45)] dark:text-slate-50 dark:focus:bg-[rgb(60,60,60)]">
               <Component />
             </DropdownMenuItem>
           )
